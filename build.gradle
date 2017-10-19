@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         //  libs for plugin distribution
@@ -14,11 +14,8 @@ def isReleaseBuild() {
 
 
 allprojects {
-    version = VERSION_NAME
-    group = GROUP
-
     repositories {
-        mavenCentral()
+        jcenter()
     }
 }
 
